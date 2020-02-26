@@ -1,0 +1,25 @@
+﻿@page
+
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
+<div>
+    <h2>Chat Test</h2>
+    <div>
+        <ul id="messageList"></ul>
+    </div>
+</div>
+<div>
+    <div>Sender: <input type="text" id="sender"/></div>
+    <div>Message: <input type="text" id="message""></div>
+    <div><input type="button" id="sendMessage" value="Send" /></div>
+</div>
+
+<script src="/lib/signalr/signalr.js"></script>
+<script src="/lib/signalr/chat.js"></script>
